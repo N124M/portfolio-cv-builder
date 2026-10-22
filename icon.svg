@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe padding -->
+  <rect width="512" height="512" rx="112" fill="url(#primaryGrad)"/>
+
+  <!-- Subtle grid lines background -->
+  <path d="M64 160h384M64 256h384M64 352h384M160 64v384M256 64v384M352 64v384" 
+        stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+
+  <!-- Outer circle glow -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-dasharray="8 8" opacity="0.4"/>
+
+  <!-- Logo Emblem: Khairul Nizam 'K' Symbol -->
+  <g filter="url(#shadow)">
+    <!-- Vertical Pillar -->
+    <rect x="148" y="132" width="46" height="248" rx="14" fill="#ffffff"/>
+    
+    <!-- Top Diagonal Arm -->
+    <path d="M190 262 L320 146 C332 135 352 142 352 158 L352 188 C352 198 346 208 338 215 L252 288 L346 368 C354 375 356 386 351 396 L334 426 C326 438 310 440 298 430 L190 326 Z" 
+          fill="url(#accentGrad)"/>
+          
+    <!-- Inner Accent Shard -->
+    <path d="M210 270 L300 170 L260 270 Z" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Code brackets & briefcase mini badge -->
+  <g transform="translate(320, 310)">
+    <circle cx="50" cy="50" r="44" fill="#0284C7" stroke="#ffffff" stroke-width="4"/>
+    <!-- Document / Checkmark icon -->
+    <path d="M38 52 L47 61 L64 42" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

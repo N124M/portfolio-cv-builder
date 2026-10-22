@@ -1,0 +1,6 @@
+{
+  "name": "Khairul Nizam - Portofolio Profesional & CV Builder",
+  "description": "Website portofolio profesional Khairul Nizam (Bidang IT & Umum) dengan sistem unduh CV, watermark otomatis, builder CV interaktif, dan sinkronisasi real-time multi-platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
